@@ -1,9 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: bisque;
     font-style: italic;
     
 }
 h1{
-    text-align: center;
+    text-align: left;
     font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+.main-cont{
+    width: 1200px;
+    max-width: 100vw;
+    margin: auto;
+    cursor: pointer;
+}
+.close{
+    display: none;
+}
+.header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    margin-top: 15px;
+}
+.list *{
+    cursor: pointer;
+}
+.icon{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25 ease-in-out;
+}
+
+.list:hover .icon {
+    opacity: 1;
+    visibility: visible; 
+}
+.img-cover{
+    opacity: 0;
+    height: 0px;
+    margin: auto;
+    transition: all ease 0.5s;
+    width: fit-content;
+}
+.img-cover:hover{
+    opacity: 1;
+    
+}
+
+.first-meme{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.second-meme{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.display{
+    display: none;
+}
+
+.display:hover + .inner-wrap .img-cover,
+.display:checked + .inner-wrap .img-cover{
+    height: auto;
+}
+.display:hover + .inner-wrap .open,
+.display:checked + .inner-wrap .open{
+    display: none;
+}
+.display:hover + .inner-wrap .close,
+.display:checked + .inner-wrap .close{
+    display: block;
+}
+.list-in{
+    padding-top: 20px;
+}
+.item:first-child{
+    padding-top: 0;
 }

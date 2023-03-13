@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header class="heai">
+     <div class="main-cont">
+        <header>
         <h1>CSS BAYAN</h1>
-    </header>
-    <div class="list">
-        <p>Hacker XD</p>
-        <img src="/Assets/cross.svg" alt="">
-        <img src="Assets/play.svg" alt="">
-        <img src="/Assets/images.jpg" alt="">
+        </header>
+        <ul class="list">
+             <li class="list-in">
+                <input type="radio" name="selection" class="display" id="one-meme" checked/>
+                <label for="one-meme" class="inner-wrap">
+                    <div class="header">
+                    <p>
+                        Hacker XD
+                    </p>
+                    <img class="icon open" width="20px" height="20px" src="Assets/play.svg" alt="">
+                    <img class="icon close" width="20px" height="20px" src="Assets/cross.svg" alt="">
+                    </div>
+                 <div class="img-cover">
+                    <img class="first-meme" src="Assets/images.jpg" alt="">
+                </div>
+                </label>
+            </li>    
+
+        
+        
+            <li class="list-in">
+               <input type="radio" name="selection" class="display" id="two-meme" />
+               <label for="two-meme" class="inner-wrap">
+                   <div class="header">
+                   <p>Front/BackEnd meme</p>
+                   <img class="icon open" width="20px" height="20px" src="Assets/play.svg" alt="">
+                   <img class="icon close" width="20px" height="20px" src="Assets/cross.svg" alt="">
+                   </div>
+                <div class="img-cover">
+                   <img class="second-meme" src="Assets/pasted-image-0-7.png" alt="">
+               </div>
+               </label>
+           </li>    
+
+       
+    </ul>
     </div>
 </body>
 </html>
